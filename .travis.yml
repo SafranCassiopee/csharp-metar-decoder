@@ -1,5 +1,7 @@
 language: csharp
 solution: csharp-metar-decoder.sln
+dist: trusty
+group: deprecated-2017Q4
 
 install:
   - nuget restore ./csharp-metar-decoder.sln
@@ -18,7 +20,7 @@ install:
 script:
   - xbuild /p:Configuration=Release ./csharp-metar-decoder.sln
   - export LD_LIBRARY_PATH=/usr/local/lib
-  - mono --debug --profile=monocov:outfile=monocovCoverage.cov,+csharp-metar-decoder ./src/packages/NUnit.Console.3.0.0-beta-3/tools/nunit-console.exe --process=Single ./csharp-metar-decoder/bin/Release/csharp-metar-decoder-tests.dll
+  - mono --debug --profile=monocov:outfile=monocovCoverage.cov,+csharp-metar-decoder ./src/packages/NUnit.Console.3.0.0-beta-3/tools/nunit-console.exe --process=Single ./csharp-metar-decoder/bin/Release/csharp-metar-decoder.dll
   - monocov --export-xml=monocovCoverage monocovCoverage.cov
   - cat monocovCoverage.cov
   - ls monocovCoverage
