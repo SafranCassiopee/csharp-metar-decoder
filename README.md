@@ -85,7 +85,7 @@ The returned object is a DecodedMetar object from which you can retrieve all the
 
 All values who have a unit are based on the `Value` object which provides the ActualValue and ActualUnit properties
 
-Check the [DecodedMetar class](https://github.com/SafranCassiopee/csharp-metar-decoder/blob/master/csharp-metar-decoder/Entity/DecodedMetar.cs) for the structure of the resulting object
+Please check the [DecodedMetar class](https://github.com/SafranCassiopee/csharp-metar-decoder/blob/master/csharp-metar-decoder/Entity/DecodedMetar.cs) for the structure of the resulting object
 
 ```csharp
 
@@ -288,6 +288,3 @@ nunit-console.exe /xml:results.xml csharp-metar-decoder-tests\bin\debug\csharp-m
 This library is fully unit tested, and uses [nUnit]((http://nunit.org/)) to launch the tests.
 
 Travis CI is used for continuous integration, which triggers tests for .NET 4.5 for each push to the repo.
-
-
-
