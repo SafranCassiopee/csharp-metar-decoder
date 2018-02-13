@@ -1,0 +1,21 @@
+packages/
+/build/
+*.suo
+*.user
+_ReSharper.*/
+*.sdf
+Generated/
+bin/
+obj/
+Debug/
+Release/
+DebugObfuscated/
+ReleaseObfuscated/
+*.opensdf
+*.tlog
+*.log
+*.opendb
+*.nupkg
+
+# Visual Studio plugins
+.axoCover
