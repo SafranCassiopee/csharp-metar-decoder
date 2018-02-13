@@ -10,8 +10,6 @@ A .NET library to decode METAR strings, fully unit tested (100% code coverage)
 
 This is largely based on [SafranCassiopee/php-metar-decoder](https://github.com/SafranCassiopee/php-metar-decoder)
 
-You can try it on the [demo website](https://php-metar-decoder.cassiopee.aero), which is currently based on the PHP version.
-
 They use csharp-metar-decoder in production:
 
 - [Safran AGS ](https://www.safran-electronics-defense.com/aerospace/commercial-aircraft/information-system/analysis-ground-station-ags) (private)
@@ -87,7 +85,7 @@ The returned object is a DecodedMetar object from which you can retrieve all the
 
 All values who have a unit are based on the `Value` object which provides the ActualValue and ActualUnit properties
 
-*TODO: full documentation of the structure of the DecodedMetar object*
+Check the [DecodedMetar class](https://github.com/SafranCassiopee/csharp-metar-decoder/blob/master/csharp-metar-decoder/Entity/DecodedMetar.cs) for the structure of the resulting object
 
 ```csharp
 
@@ -190,18 +188,18 @@ Here are all available units for conversion:
 
 ```csharp
 // speed units:
-Value.Unit.MeterPerSecond
-Value.Unit.KilometerPerHour
-Value.Unit.Knot
+// Value.Unit.MeterPerSecond
+// Value.Unit.KilometerPerHour
+// Value.Unit.Knot
 
 // distance units:
-Value.Unit.Meter
-Value.Unit.Feet
-Value.Unit.StatuteMile
+// Value.Unit.Meter
+// Value.Unit.Feet
+// Value.Unit.StatuteMile
 
 // pressure units:
-Value.Unit.HectoPascal
-Value.Unit.MercuryInch
+// Value.Unit.HectoPascal
+// Value.Unit.MercuryInch
 
 // use on-the-fly conversion
 var distance_in_sm = visibility.GetConvertedValue(Value.Unit.StatuteMile);
@@ -272,13 +270,13 @@ If you have any other idea to improve the library, please use github issues or d
 In order to contribute to the codebase, you must fork the repository on github, than clone it locally with:
 
 ```shell
-git clone https://github.com/<username>/chsarp-metar-decoder
+git clone https://github.com/<username>/csharp-metar-decoder
 ```
 
 Install all the dependencies using nuget :
 
 ```shell
-nuget restore chsarp-metar-decoder\
+nuget restore csharp-metar-decoder\
 ```
 
 You're ready to launch the test suite with:
@@ -289,12 +287,7 @@ nunit-console.exe /xml:results.xml csharp-metar-decoder-tests\bin\debug\csharp-m
 
 This library is fully unit tested, and uses [nUnit]((http://nunit.org/)) to launch the tests.
 
-~~Travis CI is used for continuous integration, which triggers tests for PHP 5.3, 5.4, 5.5 for each push to the repo.~~
+Travis CI is used for continuous integration, which triggers tests for C# 3.5 for each push to the repo.
 
-~~If you're interested in code coverage you'll also need xdebug installed and enabled (package `php5-xdebug` on debian), then you can generate the html report about tests code coverage with:~~
-
-```shell
-~~make coverage~~
-```
 
 
