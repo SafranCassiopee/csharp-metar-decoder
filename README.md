@@ -287,7 +287,7 @@ nunit-console.exe /xml:results.xml csharp-metar-decoder-tests\bin\debug\csharp-m
 
 This library is fully unit tested, and uses [nUnit]((http://nunit.org/)) to launch the tests.
 
-Travis CI is used for continuous integration, which triggers tests for C# 3.5 for each push to the repo.
+Travis CI is used for continuous integration, which triggers tests for .NET 4.5 for each push to the repo.
 
 
 
