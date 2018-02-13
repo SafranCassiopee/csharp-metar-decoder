@@ -1,7 +1,6 @@
 C# METAR decoder
 =================
 
-[![License](https://poser.pugx.org/safran-cassiopee/csharp-metar-decoder/license.svg)](https://packagist.org/packages/safran-cassiopee/csharp-metar-decoder)
 [![Build Status](https://travis-ci.org/SafranCassiopee/csharp-metar-decoder.svg)](https://travis-ci.org/SafranCassiopee/csharp-metar-decoder)
 [![Coverage Status](https://coveralls.io/repos/github/SafranCassiopee/csharp-metar-decoder/badge.svg?branch=master)](https://coveralls.io/github/SafranCassiopee/csharp-metar-decoder?branch=master)
 [![Latest Stable Version](https://poser.pugx.org/safran-cassiopee/csharp-metar-decoder/v/stable.svg)](https://packagist.org/packages/safran-cassiopee/csharp-metar-decoder)
