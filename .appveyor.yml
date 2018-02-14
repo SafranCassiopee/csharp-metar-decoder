@@ -1,0 +1,8 @@
+configuration: Release
+
+before_build:
+  - nuget restore
+
+build:
+  project: csharp-metar-decoder.sln
+  verbosity: minimal
