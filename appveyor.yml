@@ -18,4 +18,4 @@ environment:
 after_test:
   - dir /s
 #  - OpenCover.4.6.519\tools\OpenCover.Console.exe -target:"NUnit.ConsoleRunner.3.8.0\tools\nunit3-console.exe" -targetargs:"csharp-metar-decoder-tests.dll" -filter:"+[*]* -[*.Tests]*" -register:user
-  - coveralls.net.0.412\tools\Coveralls.exe --opencover -i .\TestResult.xml
+  - coveralls.net.0.412\tools\csmacnz.Coveralls.exe --opencover -i .\TestResult.xml
