@@ -9,6 +9,7 @@ before_build:
 build:
   project: csharp-metar-decoder.sln
   verbosity: minimal
+  publish_nuget: true
 
 environment:
   COVERALLS_SERVICE_NAME: appveyor
