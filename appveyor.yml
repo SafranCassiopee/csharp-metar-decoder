@@ -16,5 +16,5 @@ environment:
     secure: L4yjC/ST1vT5qUl7/LnE57sZRYp9+yc68lL9GjYuPUC35peUxK3PHo9E+TyzBTNF
 
 after_test:
-  - OpenCover.Console.exe -target:.toolsNUnit.Runners.2.6.4toolsnunit-console.exe -targetargs:"/nologo /noshadow csharp-metar-decoder-tests.dll" -filter:"+[*]* -[*.Tests]*" -register:user
+  - OpenCover.Console.exe -target:Unit.Runners.nunit-console.exe -targetargs:"/nologo /noshadow csharp-metar-decoder-tests.dll" -filter:"+[*]* -[*.Tests]*" -register:user
   - coveralls.net.Coveralls.exe --opencover -i .results.xml
