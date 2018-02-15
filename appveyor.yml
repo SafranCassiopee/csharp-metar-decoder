@@ -16,7 +16,7 @@ environment:
     secure: CAjCS0NsYDheBeTgzVRW7JqNdHtHZrDo3y4oLBwCHv6IzTo/t5e7whWJrbt5Duf6
 
 after_test:
-  - OpenCover.4.6.519\tools\OpenCover.Console.exe -target:"NUnit.ConsoleRunner.3.8.0\tools\nunit3-console.exe" -targetargs:"--result nunit2 csharp-metar-decoder-tests\bin\Release\csharp-metar-decoder-tests.dll" -returntargetcode:10000 -log:All -register:Path32 -output:".\cover_results.xml"
+  - OpenCover.4.6.519\tools\OpenCover.Console.exe -filter:"-[*]csharp_metar_decoder_tests" -target:"NUnit.ConsoleRunner.3.8.0\tools\nunit3-console.exe" -targetargs:"--result nunit2 csharp-metar-decoder-tests\bin\Release\csharp-metar-decoder-tests.dll" -returntargetcode:10000 -log:All -register:Path32 -output:".\cover_results.xml"
   - coveralls.net.0.412\tools\csmacnz.Coveralls.exe --opencover -i .\cover_results.xml
   
 deploy:
