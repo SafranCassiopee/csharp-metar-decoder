@@ -16,6 +16,6 @@ environment:
     secure: L4yjC/ST1vT5qUl7/LnE57sZRYp9+yc68lL9GjYuPUC35peUxK3PHo9E+TyzBTNF
 
 after_test:
-  - find OpenCover.4.6.519
+  - find .
   - OpenCover.4.6.519\OpenCover.Console.exe -target:"nUnit.Runners.3.8.0\nunit-console.exe" -targetargs:"/nologo /noshadow csharp-metar-decoder-tests.dll" -filter:"+[*]* -[*.Tests]*" -register:user
   - coveralls.net.0.412\Coveralls.exe --opencover -i .results.xml
