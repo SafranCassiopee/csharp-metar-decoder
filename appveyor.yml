@@ -25,7 +25,7 @@ artifacts:
   - path: '**\csharp-metar-decoder.*.nupkg'
   
 
- deploy:
+deploy:
   provider: NuGet
   api_key:
     secure: jbYoFWkojd44P+NkWZht17Vbdy6Hk2lrj8g0hfaEVUmH97z5MUK92XieuxY81U3B
