@@ -22,7 +22,6 @@ after_test:
   
 artifacts:
   - path: '**\*.nupkg'
-  - type: NuGetPackage
   
 deploy:
   provider: NuGet
