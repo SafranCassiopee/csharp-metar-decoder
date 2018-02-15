@@ -2,9 +2,9 @@ configuration: Release
 
 before_build:
   - nuget restore
-  - nuget install NUnit.Runners
-  - nuget install OpenCover
-  - nuget install coveralls.net
+  - nuget install NUnit.Runners -Version 3.8.0
+  - nuget install OpenCover -Version 4.6.519
+  - nuget install coveralls.net -Version 0.412
 
 build:
   project: csharp-metar-decoder.sln
@@ -17,5 +17,5 @@ environment:
 
 after_test:
   - ls
-  - OpenCover.Console.exe -target:Unit.Runners.nunit-console.exe -targetargs:"/nologo /noshadow csharp-metar-decoder-tests.dll" -filter:"+[*]* -[*.Tests]*" -register:user
-  - coveralls.net.Coveralls.exe --opencover -i .results.xml
+  - OpenCover.4.6.519\Console.exe -target:nUnit.Runners.3.8.0\nunit-console.exe -targetargs:"/nologo /noshadow csharp-metar-decoder-tests.dll" -filter:"+[*]* -[*.Tests]*" -register:user
+  - coveralls.net.0.412\Coveralls.exe --opencover -i .results.xml
