@@ -20,6 +20,10 @@ after_test:
   - coveralls.net.0.412\tools\csmacnz.Coveralls.exe --opencover -i .\cover_results.xml
   - more .\cover_results.xml
   
+artifacts:
+  - path: '**\*.nupkg'
+  - type: NuGetPackage
+  
 deploy:
   provider: NuGet
   api_key:
