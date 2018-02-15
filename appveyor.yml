@@ -17,5 +17,5 @@ environment:
 
 after_test:
   - dir /s
-  - OpenCover.4.6.519\tools\OpenCover.Console.exe -target:"NUnit.ConsoleRunner.3.8.0\tools\nunit3-console.exe" -targetargs:"/nologo /noshadow csharp-metar-decoder-tests.dll" -filter:"+[*]* -[*.Tests]*" -register:user
-  - coveralls.net.0.412\tools\Coveralls.exe --opencover -i .results.xml
+#  - OpenCover.4.6.519\tools\OpenCover.Console.exe -target:"NUnit.ConsoleRunner.3.8.0\tools\nunit3-console.exe" -targetargs:"csharp-metar-decoder-tests.dll" -filter:"+[*]* -[*.Tests]*" -register:user
+  - coveralls.net.0.412\tools\Coveralls.exe --opencover -i .\TestResult.xml
