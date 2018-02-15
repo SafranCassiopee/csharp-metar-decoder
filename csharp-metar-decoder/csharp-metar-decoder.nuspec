@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>csharp-metar-decoder</id>
+    <version>1.0.0</version>
+    <title>CSharp METAR Decoder</title>
+    <authors>SAFRAN Cassiopee</authors>
+    <owners>SAFRAN Cassiopee</owners>
+    <projectUrl>https://github.com/SafranCassiopee/csharp-metar-decoder</projectUrl>
+    <licenseUrl>https://github.com/SafranCassiopee/csharp-metar-decoder/blob/master/LICENSE</licenseUrl>
+    <iconUrl>https://github.com/SafranCassiopee/csharp-metar-decoder/</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Open-source CSharp METAR Decoder library</description>
+    <releaseNotes>First release.</releaseNotes>
+    <tags>metar</tags>
+     <dependencies>
+        <group targetFramework=".NETFramework4.5">
+        </group>
+      </dependencies>
+  </metadata>
+  <files>
+    <file src="bin\Release\csharp-metar-decoder.dll" target="lib\Net45\csharp-metar-decoder.dll" />
+  </files>
+</package>
