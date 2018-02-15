@@ -21,7 +21,7 @@ after_test:
   - more .\cover_results.xml
   
 artifacts:
-  - path: '**\*.nupkg'
+  - path: '**\csharp-metar-decoder.*.nupkg'
   
 deploy:
   provider: NuGet
