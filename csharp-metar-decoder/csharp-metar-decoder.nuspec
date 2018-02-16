@@ -7,12 +7,11 @@
     <authors>SAFRAN Cassiopee</authors>
     <owners>SAFRAN Cassiopee</owners>
     <projectUrl>https://github.com/SafranCassiopee/csharp-metar-decoder</projectUrl>
-    <licenseUrl>https://github.com/SafranCassiopee/csharp-metar-decoder/blob/master/LICENSE</licenseUrl>
-    <iconUrl>https://github.com/SafranCassiopee/csharp-metar-decoder/</iconUrl>
+    <licenseUrl>https://raw.githubusercontent.com/SafranCassiopee/csharp-metar-decoder/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Open-source CSharp METAR Decoder library</description>
     <releaseNotes>First release.</releaseNotes>
-    <tags>metar</tags>
+    <tags>metar aviation weather</tags>
      <dependencies>
         <group targetFramework=".NETFramework4.5">
         </group>
