@@ -23,11 +23,12 @@ after_test:
   - dir /s *.nupkg
 
 artifacts:
-  - path: '**\csharp-metar-decoder.*.nupkg'
-  
+  - path: '**\csharp-metar-decoder.*.nupkg'  
 
 deploy:
   provider: NuGet
+  on:
+    branch: master
   api_key:
     secure: zgNT2DNyLuvf8sH+Y1kAI/aOL6E4S5zVHeadTWSFP1/vxVpEQ75QLxyBQMZr4A0n
   skip_symbols: true
