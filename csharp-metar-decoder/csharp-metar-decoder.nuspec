@@ -2,14 +2,21 @@
 <package >
   <metadata>
     <id>csharp-metar-decoder</id>
-    <version>1.0.0</version>
+    <version>$version$</version>
     <title>CSharp METAR Decoder</title>
     <authors>SAFRAN Cassiopee</authors>
     <owners>SAFRAN Cassiopee</owners>
     <projectUrl>https://github.com/SafranCassiopee/csharp-metar-decoder</projectUrl>
     <licenseUrl>https://raw.githubusercontent.com/SafranCassiopee/csharp-metar-decoder/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>Open-source CSharp METAR Decoder library</description>
+    <description>This piece of software is a library package that provides a parser to decode raw METAR observation.
+
+METAR is a format made for weather information reporting. METAR weather reports are predominantly used by pilots and by meteorologists, who use it to assist in weather forecasting.
+Raw METAR format is highly standardized through the International Civil Aviation Organization (ICAO).
+
+*    [METAR definition on wikipedia](http://en.wikipedia.org/wiki/METAR)
+*    [METAR format specification](http://www.wmo.int/pages/prog/www/WMOCodes/WMO306_vI1/VolumeI.1.html)
+*    [METAR documentation](http://meteocentre.com/doc/metar.html)</description>
     <releaseNotes>First release.</releaseNotes>
     <tags>metar aviation weather</tags>
      <dependencies>

@@ -27,8 +27,8 @@ after_test:
   - nuget install coveralls.net -Version 0.412
   - OpenCover.4.6.519\tools\OpenCover.Console.exe -target:"NUnit.ConsoleRunner.3.8.0\tools\nunit3-console.exe" -targetargs:"--result nunit2 csharp-metar-decoder-tests\bin\Release\csharp-metar-decoder-tests.dll" -returntargetcode:10000 -log:All -register:Path32 -output:".\cover_results.xml"
   - coveralls.net.0.412\tools\csmacnz.Coveralls.exe --opencover -i .\cover_results.xml
-  - echo Now displaying csharp-metar-decoder\Properties\AssemblyInfo.cs
-  - more csharp-metar-decoder\Properties\AssemblyInfo.cs
+  - echo Now displaying csharp-metar-decoder\csharp-metar-decoder.nuspec
+  - more csharp-metar-decoder\csharp-metar-decoder.nuspec
 
 artifacts:
   - path: '**\csharp-metar-decoder.*.nupkg'
