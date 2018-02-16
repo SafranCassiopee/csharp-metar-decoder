@@ -3,9 +3,6 @@ version: 1.0.0.{build}
 
 before_build:
   - nuget restore
-  - nuget install NUnit.Runners -Version 3.8.0
-  - nuget install OpenCover -Version 4.6.519
-  - nuget install coveralls.net -Version 0.412
 
 build:
   project: csharp-metar-decoder.sln
@@ -25,6 +22,9 @@ environment:
     secure: CAjCS0NsYDheBeTgzVRW7JqNdHtHZrDo3y4oLBwCHv6IzTo/t5e7whWJrbt5Duf6
 
 after_test:
+  - nuget install NUnit.Runners -Version 3.8.0
+  - nuget install OpenCover -Version 4.6.519
+  - nuget install coveralls.net -Version 0.412
   - OpenCover.4.6.519\tools\OpenCover.Console.exe -target:"NUnit.ConsoleRunner.3.8.0\tools\nunit3-console.exe" -targetargs:"--result nunit2 csharp-metar-decoder-tests\bin\Release\csharp-metar-decoder-tests.dll" -returntargetcode:10000 -log:All -register:Path32 -output:".\cover_results.xml"
   - coveralls.net.0.412\tools\csmacnz.Coveralls.exe --opencover -i .\cover_results.xml
 
@@ -32,6 +32,7 @@ artifacts:
   - path: '**\csharp-metar-decoder.*.nupkg'
 
 before_deploy:
+  - echo Now displaying csharp-metar-decoder\Properties\AssemblyInfo.cs
   - more csharp-metar-decoder\Properties\AssemblyInfo.cs
 
 deploy:
