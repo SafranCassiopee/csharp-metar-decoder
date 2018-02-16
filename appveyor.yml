@@ -14,10 +14,10 @@ build:
 
 assembly_info:
   patch: true
-  file: 'Properties\AssemblyInfo.cs'
-  assembly_version: '{version}'
-  assembly_file_version: '{version}'
-  assembly_informational_version: '{version}'
+  file: AssemblyInfo.*
+  assembly_version: "{version}"
+  assembly_file_version: "{version}"
+  assembly_informational_version: "{version}"
   
 environment:
   COVERALLS_SERVICE_NAME: appveyor
