@@ -77,6 +77,8 @@ namespace csharp_metar_decoder
             //SurfaceWindChunkDecoder
             public const string SurfaceWindInformationBadFormat = BadFormatFor + @"surface wind information";
             public const string NoSurfaceWindInformationMeasured = @"No information measured for surface wind";
+            public const string InvalidWindDirectionInterval = @"Wind direction should be in [0,360]";
+            public const string InvalidWindDirectionVariationsInterval = @"Wind direction variations should be in [0,360]";
 
             //VisibilityChunkDecoder
             public const string ForVisibilityInformationBadFormat = BadFormatFor + @"visibility information";

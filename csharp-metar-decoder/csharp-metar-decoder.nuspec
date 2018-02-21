@@ -17,6 +17,7 @@ Raw METAR format is highly standardized through the International Civil Aviation
 *    [METAR definition on wikipedia](http://en.wikipedia.org/wiki/METAR)
 *    [METAR format specification](http://www.wmo.int/pages/prog/www/WMOCodes/WMO306_vI1/VolumeI.1.html)
 *    [METAR documentation](http://meteocentre.com/doc/metar.html)</description>
+    <summary>This piece of software is a library package that provides a parser to decode raw METAR observation.</summary>
     <releaseNotes>First release.</releaseNotes>
     <tags>metar aviation weather</tags>
      <dependencies>

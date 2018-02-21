@@ -96,6 +96,15 @@ namespace csharp_metar_decoder_tests.chunkdecoder
                 },
                 new CloudChunkDecoderTester()
                 {
+                    Chunk = "OVC////// SCT250 CCC",
+                    nbLayers = 2,
+                    layer1Amount = CloudAmount.OVC,
+                    layer1BaseHeight = null,
+                    layer1Type = CloudType.CannotMeasure,
+                    RemainingMetar = "CCC"
+                },
+                new CloudChunkDecoderTester()
+                {
                     Chunk = "NSC DDD",
                     nbLayers = 0,
                     layer1Amount = CloudAmount.NULL,
