@@ -73,7 +73,7 @@ namespace csharp_metar_decoder.chunkdecoder
 
                 if (meanDirection.ActualValue < 0 || meanDirection.ActualValue > 360)
                 {
-                    throw new MetarChunkDecoderException(remainingMetar, newRemainingMetar, "Wind direction should be in [0,360]", this);
+                    throw new MetarChunkDecoderException(remainingMetar, newRemainingMetar, MetarChunkDecoderException.Messages.InvalidWindDirectionInterval, this);
                 }
                 surfaceWind.VariableDirection = false;
                 surfaceWind.MeanDirection = meanDirection;
@@ -87,7 +87,7 @@ namespace csharp_metar_decoder.chunkdecoder
                 if (minimumDirectionVariation.ActualValue < 0 || minimumDirectionVariation.ActualValue > 360
                 || maximumDirectionVariation.ActualValue < 0 || maximumDirectionVariation.ActualValue > 360)
                 {
-                    throw new MetarChunkDecoderException(remainingMetar, newRemainingMetar, "Wind direction variations should be in [0,360]", this);
+                    throw new MetarChunkDecoderException(remainingMetar, newRemainingMetar, MetarChunkDecoderException.Messages.InvalidWindDirectionVariationsInterval , this);
                 }
                 surfaceWind.SetDirectionVariations(minimumDirectionVariation, maximumDirectionVariation);
             }
