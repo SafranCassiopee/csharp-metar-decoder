@@ -2,7 +2,8 @@ C# METAR decoder
 =================
 [![Build status](https://ci.appveyor.com/api/projects/status/6bn4b15le3pj5wdt/branch/master?svg=true)](https://ci.appveyor.com/project/SafranCassiopee/csharp-metar-decoder/branch/master)
 [![Coverage Status](https://coveralls.io/repos/github/SafranCassiopee/csharp-metar-decoder/badge.svg)](https://coveralls.io/github/SafranCassiopee/csharp-metar-decoder)
-[![Latest Stable Version](https://poser.pugx.org/safran-cassiopee/csharp-metar-decoder/v/stable.svg)](https://packagist.org/packages/safran-cassiopee/csharp-metar-decoder)
+[![Latest Stable Version NuGet](https://img.shields.io/nuget/v/csharp-metar-decoder.svg)](https://www.nuget.org/packages/csharp-metar-decoder/)
+
 
 A .NET library to decode METAR strings, fully unit tested (100% code coverage)
 
