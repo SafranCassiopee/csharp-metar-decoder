@@ -58,7 +58,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\src\MetarDecoder\MetarDecoder.csproj">
+    <ProjectReference Include="..\..\src\MetarDecoder\MetarDecoder.csproj">
       <Project>{5A733F5A-F66B-47A6-AB9A-B7F5937B78D3}</Project>
       <Name>MetarDecoder</Name>
     </ProjectReference>

@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.32112.339
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StartMetarDecoder", "StartMetarDecoder\StartMetarDecoder.csproj", "{4FD6FAF5-537B-44E9-A902-836467BFA1FB}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MetarDecoder", "src\MetarDecoder\MetarDecoder.csproj", "{5A733F5A-F66B-47A6-AB9A-B7F5937B78D3}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{D458CFDF-1DE3-405F-A389-7D4242DD1D72}"
@@ -13,16 +11,20 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{980622A2
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetarDecoder.Tests", "tests\MetarDecoder.Tests\MetarDecoder.Tests.csproj", "{5469FBA3-67F8-466B-B800-8B3BDC9B1BF1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StartMetarDecoder", "tests\StartMetarDecoder\StartMetarDecoder.csproj", "{4FD6FAF5-537B-44E9-A902-836467BFA1FB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E3EF5830-C65D-464B-AB3A-7A8443DDB23A}"
+	ProjectSection(SolutionItems) = preProject
+		appveyor.yml = appveyor.yml
+		README.md = README.md
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{4FD6FAF5-537B-44E9-A902-836467BFA1FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4FD6FAF5-537B-44E9-A902-836467BFA1FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4FD6FAF5-537B-44E9-A902-836467BFA1FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4FD6FAF5-537B-44E9-A902-836467BFA1FB}.Release|Any CPU.Build.0 = Release|Any CPU
 		{5A733F5A-F66B-47A6-AB9A-B7F5937B78D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{5A733F5A-F66B-47A6-AB9A-B7F5937B78D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5A733F5A-F66B-47A6-AB9A-B7F5937B78D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -31,6 +33,10 @@ Global
 		{5469FBA3-67F8-466B-B800-8B3BDC9B1BF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5469FBA3-67F8-466B-B800-8B3BDC9B1BF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5469FBA3-67F8-466B-B800-8B3BDC9B1BF1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4FD6FAF5-537B-44E9-A902-836467BFA1FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FD6FAF5-537B-44E9-A902-836467BFA1FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FD6FAF5-537B-44E9-A902-836467BFA1FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FD6FAF5-537B-44E9-A902-836467BFA1FB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -38,6 +44,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{5A733F5A-F66B-47A6-AB9A-B7F5937B78D3} = {D458CFDF-1DE3-405F-A389-7D4242DD1D72}
 		{5469FBA3-67F8-466B-B800-8B3BDC9B1BF1} = {980622A2-C94B-49FC-9E23-F9D1ABD1C389}
+		{4FD6FAF5-537B-44E9-A902-836467BFA1FB} = {980622A2-C94B-49FC-9E23-F9D1ABD1C389}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {405BCCE8-6A4A-4300-B867-D1FC3F3BA21E}
